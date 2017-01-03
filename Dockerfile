@@ -10,7 +10,7 @@ VOLUME ${TW_PATH}
 ADD ./run-tiddlywiki.sh /usr/local/bin
 EXPOSE 8080
 
-ENV TW_VERSION 5.1.11
+ENV TW_VERSION 5.1.13
 RUN npm install --silent -g tiddlywiki@${TW_VERSION}
 
 CMD ["/usr/local/bin/run-tiddlywiki.sh"]
